@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1600283491 source:e:\c programming\even\unity\unity.c
+	"unity.h"
+	<stddef.h>
+	<avr/pgmspace.h>
+
+1600283491 e:\c programming\even\unity\unity.h
+	"unity_internals.h"
+
+1600283483 e:\c programming\even\unity\unity_internals.h
+	"unity_config.h"
+	<setjmp.h>
+	<math.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdint.h>
+	<limits.h>
+	<stdio.h>
+	<stdio.h>
+	<time.h>
+	<time.h>
+
+1600282170 source:e:\c programming\even\main.c
+	"test_even.h"
+
+1600283491 e:\c programming\even\test\test_even.h
+
+1600283491 source:e:\c programming\even\test\test_even.c
+	"unity.h"
+	"even.h"
+
+1600283491 e:\c programming\even\inc\even.h
+
+1600283580 source:e:\c programming\even\src\even.c
+	"even.h"
+
