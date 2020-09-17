@@ -1,18 +1,18 @@
 # Name of the project
-PROJECT_NAME = even
+PROJECT_NAME = test_sum
 
 # Output directory
 BUILD = build
 
 # All source code files
-SRC = project_main.c\
-src/even.c\
+SRC = main.c\
+src/sum.c\
 
 # All test source files
-#TEST_SRC = src/calculator_operati.c\
-#test/test_calculator_operations.c
+#TEST_SRC = src/sum.c\
+#test/test_sum.c
 
-#TEST_OUTPUT = $(BUILD)/Test_$(PRO#JECT_NAME).out
+#TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
 INC	= -Iinc
@@ -20,7 +20,7 @@ INC	= -Iinc
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
 # Document files
-#DOCUMENTATION_OUTPUT = documentation/html
+# DOCUMENTATION_OUTPUT = documentation/html
 
 # Default target built
 $(PROJECT_NAME):all
@@ -32,21 +32,21 @@ all: $(SRC) $(BUILD)
 	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
 
 # Call `make run` to run the application
-#run:$(PROJECT_NAME)
-#	./$(PROJECT_OUTPUT).out
+run:$(PROJECT_NAME)
+	./$(PROJECT_OUTPUT).out
 
 # Document the code using Doxygen
 #doc:
-#	make -C ./documentation
+	#make -C ./documentation
 
 # Build and run the unit tests
 #test:$(BUILD)
-#	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
-#	./$(TEST_OUTPUT)
+	#gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
+	#./$(TEST_OUTPUT)
 
 # Remove all the built files, invoke by `make clean`
 #clean:
-#	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+	#rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
 
 # Create new build folder if not present
 $(BUILD):
